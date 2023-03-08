@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Car'App{% endblock %}</title>
+    <title>{% block title %}3I'LOCATION{% endblock %}</title>
     {{ encore_entry_link_tags('app') }}
     {% block style %}
     {% endblock %}
@@ -10,7 +10,7 @@
 <body>
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="{{ path('index_home') }}">Car'App</a>
+        <a class="navbar-brand" href="{{ path('index_home') }}">3I'LOCATION</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -28,7 +28,7 @@
                         <li><a class="dropdown-item" href="{{ path('admin_panel') }}">Administration</a></li>
                     {% endif %}
                     {% if is_granted('ROLE_LOUEUR') %}
-                        <li><a class="dropdown-item" href="{{ path('renter_panel') }}">Panel <i class="fas fa-columns"></i></a></li>
+                        <li><a class="dropdown-item" href="{{ path('renter_panel') }}">3IL'Panel <i class="fas fa-columns"></i></a></li>
                         <li><a class="dropdown-item" href="{{ path('renter_cars') }}">Véhicules <i class="fas fa-car-alt"></i></a></li>
                         <li><a class="dropdown-item" href="{{ path('renter_rents') }}">Locations <i class="fas fa-receipt"></i></a></li>
                         <li><a class="dropdown-item" href="{{ path('renter_customers') }}">Clients <i class="fas fa-users"></i></a></li>
